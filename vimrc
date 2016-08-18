@@ -13,6 +13,7 @@ Bundle 'gmarik/vundle'
 " " vim-scripts repos
 " " vimscripts的repo使用下面的格式，直接是插件名称
 Bundle 'taglist.vim'
+Bundle 'indentpython.vim'
 "Bundle 'SuperTab'
 "Bundle 'vimwiki'
 "Bundle 'winmanager'
@@ -31,7 +32,7 @@ Bundle 'matrix.vim--Yang'
 
 
 
-" non github reposo
+" " non github reposo
 " " 非github的插件，可以直接使用其git地址
 " " Bundle 'git://git.wincent.com/command-t.git'
 " " ...
@@ -48,7 +49,6 @@ Bundle 'matrix.vim--Yang'
 " " 需要配置这个插件，也是在vimrc中设置即可
 " " see :h vundle for more details or wiki for FAQ
 " " NOTE: comments after Bundle command are not allowed..
-
 
 if v:lang =~ "utf8$" || v:lang =~ "UTF-8$"
    set fileencodings=ucs-bom,utf-8,latin1
@@ -121,4 +121,5 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-
+set number
+set encoding=utf-8
